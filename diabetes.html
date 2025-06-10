@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding Type 2 Diabetes - MedPal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7f9fb;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 48px;
+    }
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      color: #2d3a4b;
+    }
+    .navbar nav a {
+      color: #2d3a4b;
+      text-decoration: none;
+      margin: 0 4px;
+      font-size: 0.98em;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .navbar nav a.active, .navbar nav a:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+    .container {
+      max-width: 440px;
+      margin: 18px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 18px 8px 12px 8px;
+      position: relative;
+    }
+    .top-actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 10px;
+      min-height: 32px;
+    }
+    .back-link {
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 4px;
+      padding: 4px 12px;
+      background: #f7f9fb;
+      transition: background 0.2s;
+      font-weight: 500;
+      box-shadow: 0 1px 3px rgba(37,99,235,0.08);
+      margin-left: auto;
+      display: inline-block;
+    }
+    .back-link:active, .back-link:hover {
+      background: #e8f0fe;
+      text-decoration: underline;
+    }
+    .article-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .article-header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: #f2f2f2;
+    }
+    .article-title {
+      font-size: 1.5em;
+      color: #2563eb;
+      margin: 0;
+    }
+    .article-meta {
+      color: #475569;
+      font-size: 1em;
+      margin-bottom: 8px;
+    }
+    .article-content h2 {
+      color: #2563eb;
+      margin-top: 18px;
+      font-size: 1.1em;
+    }
+    .article-content ul {
+      margin: 12px 0 12px 24px;
+    }
+    .article-content li {
+      margin-bottom: 8px;
+      font-size: 1em;
+    }
+    .article-content p {
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.93em;
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      .container { max-width: 98vw; }
+      .article-header { flex-direction: column; gap: 8px; }
+      .article-header img { width: 90vw; height: 30vw; max-width: 200px; max-height: 90px; }
+      .top-actions { min-height: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <span class="logo">MedPal</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="articles.html" class="active">Articles</a>
+      <!-- <a href="resources.html">Tools & Resources</a> -->
+      <a href="faq.html">FAQ</a>
+      <!-- <a href="contact.html">Contact Us</a> -->
+    </nav>
+  </div>
+  <div class="container">
+    <div class="top-actions">
+      <a class="back-link" href="index.html">&#8592; Back to MedPal</a>
+    </div>
+    <div class="article-header">
+      <img src="https://dfz3o7ioaxc1g.cloudfront.net/wp-content/uploads/2024/09/diabetes-symptoms-and-treatment.jpg" alt="Type 2 Diabetes">
+      <div>
+        <h1 class="article-title">Understanding Type 2 Diabetes</h1>
+        <div class="article-meta">Find out about the causes, symptoms, and management of type 2 diabetes</div>
+      </div>
+    </div>
+    <div class="article-content">
+      <p>
+        Type 2 diabetes is a chronic condition that affects the way your body metabolizes sugar (glucose), an important source of fuel for your body. Unlike type 1 diabetes, where the body produces little or no insulin, people with type 2 diabetes develop insulin resistance, meaning their bodies do not use insulin effectively.
+      </p>
+      <h2>Causes</h2>
+      <ul>
+        <li><strong>Insulin resistance:</strong> The body's cells become less responsive to insulin.</li>
+        <li><strong>Genetics:</strong> Family history increases risk.</li>
+        <li><strong>Overweight and inactivity:</strong> Excess weight, especially around the abdomen, and a sedentary lifestyle are major risk factors.</li>
+        <li><strong>Age:</strong> Risk increases after age 45, but type 2 diabetes is rising among younger people.</li>
+        <li><strong>Other factors:</strong> Ethnicity, high blood pressure, and poor diet can also contribute.</li>
+      </ul>
+      <h2>Symptoms</h2>
+      <ul>
+        <li>Increased thirst and frequent urination</li>
+        <li>Unexplained weight loss</li>
+        <li>Fatigue and weakness</li>
+        <li>Blurred vision</li>
+        <li>Slow-healing sores or frequent infections</li>
+        <li>Tingling or numbness in hands or feet</li>
+        <li>Darkened skin in certain areas (such as neck or armpits)</li>
+      </ul>
+      <h2>Management</h2>
+      <ul>
+        <li><strong>Healthy eating:</strong> Focus on whole grains, fruits, vegetables, lean proteins, and healthy fats. Limit processed foods and sugary drinks.</li>
+        <li><strong>Regular physical activity:</strong> Aim for at least 150 minutes of moderate exercise per week, such as brisk walking or cycling.</li>
+        <li><strong>Weight management:</strong> Losing even a small amount of weight can improve blood sugar control.</li>
+        <li><strong>Monitoring blood sugar:</strong> Regularly check your blood glucose levels as advised by your healthcare provider.</li>
+        <li><strong>Medications:</strong> Some people may need oral medications or insulin therapy to help control their diabetes.</li>
+        <li><strong>Routine checkups:</strong> Regular visits to your healthcare team help monitor your condition and prevent complications.</li>
+      </ul>
+      <p>
+        <em>Early detection and proper management of type 2 diabetes can help you lead a healthy and active life. If you have risk factors or notice symptoms, consult your healthcare provider for screening and guidance.</em>
+      </p>
+    </div>
+    <footer>
+      &copy; 2025 MedPal Wellness Library &middot; Privacy Policy &middot; Terms of Use
+    </footer>
+  </div>
+</body>
+</html>

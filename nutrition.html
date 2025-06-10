@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nutrition: A Powerful Tool</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8fafc;
+            color: #222;
+        }
+        .container {
+            max-width: 440px;
+            margin: 24px auto 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 18px 14px 28px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        h1 {
+            text-align: center;
+            color: #2a7b3f;
+            margin-top: 8px;
+        }
+        .section {
+            background: #f8fafc;
+            padding: 0;
+            border-radius: 10px;
+            margin: 0;
+            box-shadow: none;
+        }
+        h2 {
+            color: #3e8e41;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .resources a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .resources a:hover {
+            text-decoration: underline;
+        }
+        /* Back button styling - upper right */
+        .back-btn {
+            position: fixed;
+            top: 18px;
+            right: 18px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            cursor: pointer;
+            z-index: 99;
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 480px) {
+            .container {
+                max-width: 98vw;
+                padding: 10px 4px 18px 4px;
+            }
+            .back-btn {
+                padding: 10px 14px;
+                font-size: 15px;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Med Pal</button>
+    <div class="container">
+        <h1>Nutrition: Your Health Tool</h1>
+        <div class="section">
+            <h2>Nutrition as a Tool</h2>
+            <p>
+                Nutrition is one of the most powerful tools for maintaining and improving health. A balanced diet fuels your body, supports immune function, enhances mental clarity, and helps prevent chronic diseases. By making informed food choices, you can boost your energy, mood, and overall quality of life.
+            </p>
+            <ul>
+                <li><strong>Energy:</strong> Proper nutrition provides the fuel your body needs for daily activities.</li>
+                <li><strong>Prevention:</strong> Healthy eating reduces the risk of heart disease, diabetes, and obesity.</li>
+                <li><strong>Healing:</strong> Nutrient-rich foods support recovery and strengthen immunity.</li>
+                <li><strong>Mental Health:</strong> Certain nutrients can improve mood and cognitive function.</li>
+            </ul>
+        </div>
+        <div class="section resources">
+            <h2>Nutrition Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://www.choosemyplate.gov/" target="_blank">USDA MyPlate</a> – Simple guides for balanced meals.
+                </li>
+                <li>
+                    <a href="https://www.eatright.org/" target="_blank">Academy of Nutrition and Dietetics</a> – Trusted nutrition information and tips.
+                </li>
+                <li>
+                    <a href="https://www.who.int/health-topics/nutrition" target="_blank">WHO Nutrition</a> – Global nutrition advice and guidelines.
+                </li>
+                <li>
+                    <a href="https://nutritionfacts.org/" target="_blank">NutritionFacts.org</a> – Science-based videos and articles.
+                </li>
+                <li>
+                    <a href="https://www.healthline.com/nutrition" target="_blank">Healthline Nutrition</a> – Practical nutrition tips and recipes.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

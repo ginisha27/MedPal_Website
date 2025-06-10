@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MedPal - Your Guide to Health & Wellness</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f6f8fa; margin: 0; }
+    .container { max-width: 800px; margin: 30px auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+    .header { display: flex; align-items: center; justify-content: space-between; }
+    .nav { margin-top: 10px; }
+    .nav button { margin-right: 10px; }
+    .main { display: flex; margin-top: 24px; }
+    .articles, .sidebar { padding: 16px; }
+    .articles { flex: 2; }
+    .sidebar { flex: 1; background: #f0f4f8; border-radius: 8px; margin-left: 16px; }
+    .article-btn { display: block; margin: 10px 0; padding: 10px; background: #007bff; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+    .article-btn:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>MedPal</h2>
+      <div class="nav">
+        <button onclick="window.open('https://www.healthline.com/', '_blank')">Home</button>
+        <button onclick="window.open('https://www.webmd.com/', '_blank')">Articles</button>
+        <button onclick="window.open('https://www.mayoclinic.org/', '_blank')">Tools & Resources</button>
+        <button onclick="window.open('https://www.cdc.gov/', '_blank')">FAQ</button>
+        <button onclick="window.open('https://www.nih.gov/', '_blank')">Contact Us</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="articles">
+        <h3>Health Articles</h3>
+        <button class="article-btn" onclick="window.open('https://www.heart.org/', '_blank')">Eating for a Healthy Heart</button>
+        <button class="article-btn" onclick="window.open('https://www.cdc.gov/physicalactivity/basics/index.htm', '_blank')">Benefits of Regular Exercise</button>
+        <button class="article-btn" onclick="window.open('https://www.helpguide.org/articles/stress/stress-management.htm', '_blank')">Managing Stress Effectively</button>
+        <button class="article-btn" onclick="window.open('https://www.diabetes.org/diabetes', '_blank')">Understanding Type 2 Diabetes</button>
+        <button class="article-btn" onclick="window.open('https://www.sleepfoundation.org/sleep-hygiene', '_blank')">Tips for Better Sleep</button>
+        <!-- Example: Open multiple websites with one button -->
+        <button class="article-btn" onclick="openMultipleWebsites()">Open All Articles</button>
+      </div>
+      <div class="sidebar">
+        <h4>Quote of the Day</h4>
+        <p>"Take care of your body. It's the only place you have to live."</p>
+        <h4>Tools & Resources</h4>
+        <button class="article-btn" onclick="window.open('https://www.nutrition.gov/', '_blank')">Nutrition</button>
+        <button class="article-btn" onclick="window.open('https://www.mentalhealth.gov/', '_blank')">Mental Health</button>
+        <button class="article-btn" onclick="window.open('https://www.choosemyplate.gov/', '_blank')">Dietary Choices</button>
+        <h4>Tools & Resources</h4>
+        <button class="article-btn" onclick="window.open('https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html', '_blank')">BMI Calculator</button>
+        <button class="article-btn" onclick="window.open('https://www.cdc.gov/screening/', '_blank')">Health Screening Checklist</button>
+      </div>
+    </div>
+    <footer style="margin-top:24px; text-align:center; font-size:12px; color:#888;">
+      &copy; 2025 MedPal Wellness Library · Privacy Policy · Terms of Use
+    </footer>
+  </div>
+  <script>
+    // Example: Open multiple websites with one button click
+    function openMultipleWebsites() {
+      window.open('https://www.heart.org/', '_blank');
+      window.open('https://www.cdc.gov/physicalactivity/basics/index.htm', '_blank');
+      window.open('https://www.helpguide.org/articles/stress/stress-management.htm', '_blank');
+      window.open('https://www.diabetes.org/diabetes', '_blank');
+      window.open('https://www.sleepfoundation.org/sleep-hygiene', '_blank');
+    }
+  </script>
+</body>
+</html>

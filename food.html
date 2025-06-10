@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eating for a Healthy Heart - MedPal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7f9fb;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 48px;
+    }
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      color: #2d3a4b;
+    }
+    .navbar nav a {
+      color: #2d3a4b;
+      text-decoration: none;
+      margin: 0 4px;
+      font-size: 0.98em;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .navbar nav a.active, .navbar nav a:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+    .container {
+      max-width: 440px;
+      margin: 18px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 18px 8px 12px 8px;
+      position: relative;
+    }
+    .top-actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 10px;
+      min-height: 32px;
+    }
+    .back-link {
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 4px;
+      padding: 4px 12px;
+      background: #f7f9fb;
+      transition: background 0.2s;
+      font-weight: 500;
+      box-shadow: 0 1px 3px rgba(37,99,235,0.08);
+      margin-left: auto;
+      display: inline-block;
+    }
+    .back-link:active, .back-link:hover {
+      background: #e8f0fe;
+      text-decoration: underline;
+    }
+    .article-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .article-header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: #f2f2f2;
+    }
+    .article-title {
+      font-size: 1.3em;
+      color: #2563eb;
+      margin: 0;
+    }
+    .article-meta {
+      color: #475569;
+      font-size: 1em;
+      margin-bottom: 8px;
+    }
+    .article-content h2 {
+      color: #2563eb;
+      margin-top: 18px;
+      font-size: 1.08em;
+    }
+    .article-content ul {
+      margin: 12px 0 12px 24px;
+    }
+    .article-content li {
+      margin-bottom: 8px;
+      font-size: 1em;
+    }
+    .article-content p {
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    .recipe-title {
+      font-weight: bold;
+      color: #1e293b;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    .recipe-desc {
+      margin-bottom: 10px;
+      color: #475569;
+    }
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.93em;
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      .container { max-width: 98vw; }
+      .article-header { flex-direction: column; gap: 8px; }
+      .article-header img { width: 90vw; height: 30vw; max-width: 200px; max-height: 90px; }
+      .top-actions { min-height: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <span class="logo">MedPal</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="articles.html" class="active">Articles</a>
+      <!-- <a href="resources.html">Tools & Resources</a> -->
+      <a href="faq.html">FAQ</a>
+      <!-- <a href="contact.html">Contact Us</a> -->
+    </nav>
+  </div>
+  <div class="container">
+    <div class="top-actions">
+      <a class="back-link" href="index.html">&#8592; Back to MedPal</a>
+    </div>
+    <div class="article-header">
+      <img src="https://media.istockphoto.com/id/1409236261/photo/healthy-food-healthy-eating-background-fruit-vegetable-berry-vegetarian-eating-superfood.jpg?s=612x612&w=0&k=20&c=kYZKgwsQbH_Hscl3mPRKkus0h1OPuL0TcXxZcO2Zdj0=" alt="Healthy Heart">
+      <div>
+        <h1 class="article-title">Eating for a Healthy Heart</h1>
+        <div class="article-meta">Learn about heart-healthy foods and simple recipes for a stronger heart</div>
+      </div>
+    </div>
+    <div class="article-content">
+      <p>
+        A healthy heart starts with healthy eating. The foods you choose every day can have a big impact on your heart’s strength and your risk of heart disease. By making small changes to your diet, you can protect your heart and enjoy delicious meals at the same time.
+      </p>
+      <h2>Heart-Healthy Foods</h2>
+      <ul>
+        <li><strong>Fruits and Vegetables:</strong> Eat a variety of colors—leafy greens, berries, oranges, tomatoes, and carrots are all great choices.</li>
+        <li><strong>Whole Grains:</strong> Choose oats, brown rice, whole wheat bread, and quinoa over refined grains.</li>
+        <li><strong>Healthy Fats:</strong> Use olive oil, nuts, seeds, and avocados instead of butter or lard. Include fatty fish like salmon or mackerel twice a week.</li>
+        <li><strong>Lean Proteins:</strong> Opt for skinless poultry, beans, lentils, and tofu.</li>
+        <li><strong>Low-Fat Dairy:</strong> Select low-fat or non-fat milk, yogurt, and cheese.</li>
+        <li><strong>Limit Salt and Sugar:</strong> Reduce processed foods, sugary drinks, and salty snacks.</li>
+      </ul>
+      <h2>Simple Heart-Healthy Recipes</h2>
+      <div class="recipe-title">Oatmeal with Berries and Nuts</div>
+      <div class="recipe-desc">
+        Cook 1/2 cup oats with 1 cup skim milk or water. Top with a handful of fresh berries and a tablespoon of chopped walnuts or almonds. Sprinkle with cinnamon for extra flavor.
+      </div>
+      <div class="recipe-title">Grilled Salmon Salad</div>
+      <div class="recipe-desc">
+        Grill a salmon fillet with lemon juice and olive oil. Serve on a bed of spinach, cherry tomatoes, cucumbers, and red onion. Drizzle with a homemade vinaigrette of olive oil and lemon.
+      </div>
+      <div class="recipe-title">Veggie Stir-Fry with Tofu</div>
+      <div class="recipe-desc">
+        Sauté broccoli, bell peppers, and carrots in olive oil. Add cubed tofu or chicken breast. Season with garlic, ginger, and a splash of low-sodium soy sauce. Serve over brown rice or quinoa.
+      </div>
+      <div class="recipe-title">Berry Yogurt Parfait</div>
+      <div class="recipe-desc">
+        Layer low-fat Greek yogurt with sliced strawberries, blueberries, and a sprinkle of chia seeds or flaxseeds. Top with a few chopped nuts for crunch.
+      </div>
+      <div class="recipe-title">Spinach & Chickpea Salad (Indian)</div>
+      <div class="recipe-desc">
+        Toss baby spinach, boiled chickpeas, diced cucumber, cherry tomatoes, and red onion. Dress with olive oil, lemon juice, and black pepper. Garnish with coriander.
+      </div>
+      <div class="recipe-title">Barley and Moong Dal Khichdi (Indian)</div>
+      <div class="recipe-desc">
+        Cook 1/2 cup barley and 1/2 cup yellow moong dal with chopped carrots, beans, and spinach. Temper with cumin, ginger, and garlic in a teaspoon of olive oil. Serve hot with a side of low-fat curd.<br>
+        <em>Rich in fiber and protein, low in fat and sodium.</em>
+      </div>
+      <div class="recipe-title">Oats Vegetable Upma (Indian)</div>
+      <div class="recipe-desc">
+        Dry roast 1/2 cup rolled oats. Sauté onions, carrots, beans, and peas in a teaspoon of oil, add oats and water, season with mustard seeds, curry leaves, and turmeric. Cook till soft. Serve with fresh coriander.<br>
+        <em>High in soluble fiber, helps lower cholesterol.</em>
+      </div>
+      <div class="recipe-title">Sprouted Moong Salad (Indian)</div>
+      <div class="recipe-desc">
+        Mix sprouted moong, chopped tomatoes, cucumber, onion, and coriander. Add lemon juice, black pepper, and a pinch of chaat masala. Enjoy as a crunchy, protein-rich snack or side.
+      </div>
+      <div class="recipe-title">Lentil & Vegetable Soup</div>
+      <div class="recipe-desc">
+        Cook chopped onions, carrots, celery, and garlic in olive oil. Add rinsed lentils, diced tomatoes, and low-sodium vegetable broth. Simmer until lentils are soft. Season with herbs like thyme and parsley.
+      </div>
+      <div class="recipe-title">Low-Fat Chaas (Indian Buttermilk)</div>
+      <div class="recipe-desc">
+        Blend low-fat curd with water, add roasted cumin powder, chopped coriander, mint, and a pinch of salt. Serve chilled as a refreshing drink.
+      </div>
+      <h2>Tips for Heart-Healthy Eating</h2>
+      <ul>
+        <li>Cook more meals at home to control ingredients and portion sizes.</li>
+        <li>Read nutrition labels and choose foods low in saturated fat, sodium, and added sugars.</li>
+        <li>Stay hydrated—drink plenty of water throughout the day.</li>
+        <li>Enjoy treats in moderation and focus on balance, not perfection.</li>
+      </ul>
+      <p>
+        <em>Small, consistent changes can make a big difference for your heart. Enjoy exploring new foods and recipes as you build a stronger, healthier you!</em>
+      </p>
+      <p style="margin-top:18px;">
+        <strong>More inspiration:</strong> 
+        <a href="https://www.tarladalal.com/recipes-for-healthy-heart-377" target="_blank" style="color:#2563eb;">Tarla Dalal: Healthy Heart Indian Recipes</a> | 
+        <a href="https://www.heartfoundation.org.au/recipes" target="_blank" style="color:#2563eb;">Heart Foundation Recipes</a>
+      </p>
+    </div>
+    <footer>
+      &copy; 2025 MedPal Wellness Library &middot; Privacy Policy &middot; Terms of Use
+    </footer>
+  </div>
+</body>
+</html>
