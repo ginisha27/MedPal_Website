@@ -7,14 +7,14 @@
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f7f9fb;
+      background: #161d23;
       margin: 0;
       padding: 0;
-      color: #222;
+      color: #e3e8ee;
     }
     .navbar {
-      background: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      background: #232c33;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.18);
       padding: 0 14px;
       display: flex;
       align-items: center;
@@ -25,16 +25,16 @@
       font-weight: bold;
       font-size: 1.1em;
       letter-spacing: 1px;
-      color: #2d3a4b;
+      color: #7be495;
     }
     .navbar nav a {
-      color: #2d3a4b;
+      color: #b4e0ff;
       text-decoration: none;
       margin: 0 4px;
       font-size: 0.98em;
       padding: 6px 10px;
       border-radius: 4px;
-      transition: background 0.2s;
+      transition: background 0.2s, color 0.2s;
       display: inline-block;
     }
     .navbar nav a.active, .navbar nav a:hover {
@@ -44,9 +44,9 @@
     .container {
       max-width: 440px;
       margin: 18px auto;
-      background: #fff;
+      background: #232c33;
       border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.32);
       padding: 18px 8px 12px 8px;
       position: relative;
     }
@@ -58,21 +58,22 @@
       min-height: 32px;
     }
     .back-link {
-      color: #2563eb;
+      color: #7bbfff;
       text-decoration: none;
       font-size: 1em;
       border-radius: 4px;
       padding: 4px 12px;
-      background: #f7f9fb;
-      transition: background 0.2s;
+      background: #181f25;
+      transition: background 0.2s, color 0.2s;
       font-weight: 500;
       box-shadow: 0 1px 3px rgba(37,99,235,0.08);
       margin-left: auto;
       display: inline-block;
     }
     .back-link:active, .back-link:hover {
-      background: #e8f0fe;
+      background: #23314a;
       text-decoration: underline;
+      color: #7be495;
     }
     .article-header {
       display: flex;
@@ -86,20 +87,20 @@
       height: 70px;
       border-radius: 12px;
       object-fit: cover;
-      background: #f2f2f2;
+      background: #1b2329;
     }
     .article-title {
       font-size: 1.3em;
-      color: #2563eb;
+      color: #7bbfff;
       margin: 0;
     }
     .article-meta {
-      color: #475569;
+      color: #8ea9c5;
       font-size: 1em;
       margin-bottom: 8px;
     }
     .article-content h2 {
-      color: #2563eb;
+      color: #7bbfff;
       margin-top: 18px;
       font-size: 1.08em;
     }
@@ -109,14 +110,22 @@
     .article-content li {
       margin-bottom: 8px;
       font-size: 1em;
+      color: #cbd5e1;
     }
     .article-content p {
       line-height: 1.7;
       margin-bottom: 10px;
+      color: #cbd5e1;
+    }
+    strong {
+      color: #b3c4d6;
+    }
+    em {
+      color: #b4e0ff;
     }
     footer {
       text-align: center;
-      color: #94a3b8;
+      color: #6c7a89;
       font-size: 0.93em;
       margin-top: 10px;
     }

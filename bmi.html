@@ -9,17 +9,18 @@
             font-family: Arial, sans-serif;
             margin: 10px;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #161d23;
+            color: #e3e8ee;
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #7bbfff;
         }
         form {
-            background: white;
+            background: #232c33;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.32);
             max-width: 400px;
             margin: 0 auto;
         }
@@ -27,18 +28,24 @@
             font-weight: bold;
             display: block;
             margin-bottom: 5px;
+            color: #b3c4d6;
         }
         input[type=number] {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid #334155;
             border-radius: 4px;
             box-sizing: border-box;
+            background: #181f25;
+            color: #e3e8ee;
+        }
+        input[type=number]::placeholder {
+            color: #6c7a89;
         }
         button[type=button] {
             width: 100%;
-            background-color: #007bff;
+            background-color: #2563eb;
             color: white;
             padding: 12px;
             border: none;
@@ -46,35 +53,36 @@
             font-size: 16px;
             cursor: pointer;
             margin-top: 10px;
+            transition: background 0.2s;
         }
         button[type=button]:hover {
-            background-color: #0056b3;
+            background-color: #1d4ed8;
         }
         #result {
             text-align: center;
             font-size: 18px;
             margin-top: 15px;
-            color: #333;
+            color: #b3c4d6;
         }
         /* Back button styling - upper right */
         .back-btn {
             position: fixed;
             top: 18px;
             right: 18px;
-            background: #007bff;
+            background: #2563eb;
             color: #fff;
             border: none;
             border-radius: 50px;
             padding: 12px 20px;
             font-size: 16px;
             font-weight: 500;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.20);
             cursor: pointer;
             z-index: 99;
             transition: background 0.2s;
         }
         .back-btn:hover {
-            background: #0056b3;
+            background: #1d4ed8;
         }
         @media (max-width: 480px) {
             form {
@@ -90,14 +98,14 @@
     </style>
 </head>
 <body>
-    <button class="back-btn" onclick="window.location.href='medpal.html'">Back to Med Pal</button>
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Med Pal</button>
     <h1>BMI Calculator</h1>
-    <p style="text-align:center;">BMI (Body Mass Index) is a measure of body fat based on height and weight.</p>
+    <p style="text-align:center; color:#8ea9c5;">BMI (Body Mass Index) is a measure of body fat based on height and weight.</p>
     <form id="bmiForm">
         <label for="weight">Weight (kg):</label>
-        <input type="number" id="weight" name="weight" required>
+        <input type="number" id="weight" name="weight" required placeholder="Enter your weight">
         <label for="height">Height (cm):</label>
-        <input type="number" id="height" name="height" required>
+        <input type="number" id="height" name="height" required placeholder="Enter your height">
         <button type="button" onclick="calculateBMI()">Calculate BMI</button>
     </form>
     <p id="result"></p>

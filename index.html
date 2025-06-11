@@ -41,6 +41,17 @@
       background: #2563eb;
       color: #fff;
     }
+    /* NEW: Style for navbar plain text items */
+    .nav-text {
+      color: #b4e0ff;
+      margin: 0 4px;
+      font-size: 0.98em;
+      padding: 6px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      background: none;
+      cursor: default;
+    }
     .container {
       max-width: 440px;
       margin: 18px auto;
@@ -190,8 +201,8 @@
     <span class="logo">MedPal</span>
     <nav>
       <a href="#" class="active" onclick="openBlankThen('https://www.healthline.com/');return false;">Home</a>
-      <a href="#" onclick="openBlankThen('https://www.webmd.com/');return false;">Articles</a>
-      <a href="#" onclick="openBlankThen('https://www.cdc.gov/');return false;">FAQ</a>
+      <span class="nav-text">Articles</span>
+      <span class="nav-text">FAQ</span>
       <!-- <a href="#" onclick="openBlankThen('https://www.nih.gov/');return false;">Contact Us</a> -->
     </nav>
   </div>
@@ -253,15 +264,15 @@
           <h4>Tools & Resources</h4>
           <ul>
             <li><a href="#" onclick="openBlankThen('nutrition.html');return false;">Nutrition</a></li>
-            <li><a href="#" onclick="openBlankThen('https://www.mentalhealth.gov/');return false;">Mental Health</a></li>
-            <li><a href="#" onclick="openBlankThen('https://www.choosemyplate.gov/');return false;">Dietary Choices</a></li>
+            <li><a href="#" onclick="openBlankThen('mentalhealth.html');return false;">Mental Health</a></li>
+            <li><a href="#" onclick="openBlankThen('dietary.html');return false;">Dietary Choices</a></li>
           </ul>
         </div>
         <div class="sidebar-section">
           <h4>Tools & Resources</h4>
           <ul>
             <li><a href="#" onclick="openBlankThen('bmi.html');return false;">BMI Calculator</a></li>
-            <li><a href="#" onclick="openBlankThen('https://www.cdc.gov/screening/');return false;">Health Screening Checklist</a></li>
+            <li><a href="#" onclick="openBlankThen('screening.html');return false;">Health Screening Checklist</a></li>
           </ul>
         </div>
       </div>
